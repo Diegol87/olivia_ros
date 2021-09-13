@@ -75,7 +75,8 @@
               <div class="card-body">
                 <h5 class="card-title">Asado en la Patagonia</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, distinctio reprehenderit, velit sed dolore quis eveniet dolor atque.</p>
-                <a href="#" class="btn btn-outline-info btn-lg">Ver más</a>
+                <!--en las lineas de código "a" se agregaron los toggle modal, relacionado a JavaScript-->
+                <a href="#" class="btn btn-outline-info btn-lg" data-bs-toggle="modal" data-bs-target="#asado">Ver más</a>
               </div>
             </div>
             <div class="card m-4">
@@ -83,7 +84,7 @@
               <div class="card-body">
                 <h5 class="card-title">Papas del fin del mundo</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, distinctio reprehenderit, velit sed dolore quis eveniet dolor atque.</p>
-                <a href="#" class="btn btn-outline-info btn-lg">Ver más</a>
+                <a href="#" class="btn btn-outline-info btn-lg" data-bs-toggle="modal" data-bs-target="#papas">Ver más</a>
               </div>
             </div>
             <div class="card m-4">
@@ -91,11 +92,72 @@
               <div class="card-body">
                 <h5 class="card-title">Salmones de Alaska</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, distinctio reprehenderit, velit sed dolore quis eveniet dolor atque.</p>
-                <a href="#" class="btn btn-outline-info btn-lg">Ver más</a>
+                <a href="#" class="btn btn-outline-info btn-lg" data-bs-toggle="modal" data-bs-target="#salmones">Ver más</a>
               </div>
             </div>
           </div>
       </section>
+
+      <!--Se agregará los códigos de modal para que funcione los toggle modal que se agregaron anteriormente, se busca en Bootstrap como modal-->
+      <div class="modal fade" id="asado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Asado en la Patagonia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="/assets/img/card-1.jpg" class="img-fluid my-3" alt="asado">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis vel mollitia saepe beatae cupiditate nam ad amet, excepturi error necessitatibus officia eum unde vitae quos sequi qui incidunt deserunt?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non maxime vel. Amet fugit aliquam expedita vel iusto sit et, quae alias rem libero magnam facilis. Quam possimus quia iure?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae libero incidunt necessitatibus fuga in qui soluta ullam repellendus quae ipsam repellat earum ipsum tempora odio quis omnis, delectus id officiis.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="salmones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Salmones de Alaska</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="/assets/img/card-3.jpg" class="img-fluid my-3" alt="salmones">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis vel mollitia saepe beatae cupiditate nam ad amet, excepturi error necessitatibus officia eum unde vitae quos sequi qui incidunt deserunt?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non maxime vel. Amet fugit aliquam expedita vel iusto sit et, quae alias rem libero magnam facilis. Quam possimus quia iure?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae libero incidunt necessitatibus fuga in qui soluta ullam repellendus quae ipsam repellat earum ipsum tempora odio quis omnis, delectus id officiis.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="papas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Papas del fin del mundo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="/assets/img/card-2.jpg" class="img-fluid my-3" alt="papas">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis vel mollitia saepe beatae cupiditate nam ad amet, excepturi error necessitatibus officia eum unde vitae quos sequi qui incidunt deserunt?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste non maxime vel. Amet fugit aliquam expedita vel iusto sit et, quae alias rem libero magnam facilis. Quam possimus quia iure?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae libero incidunt necessitatibus fuga in qui soluta ullam repellendus quae ipsam repellat earum ipsum tempora odio quis omnis, delectus id officiis.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section id="contact" class="ms-5 me-5 ps-5 pe-5"">
         <h2 class="display-3 fw-bold text-center">Contáctame</h2>
