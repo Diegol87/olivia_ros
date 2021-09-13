@@ -11,4 +11,6 @@ $(function(){
                 window.location.hash = gato;
             });
         }
-    });
+    })
+});
+
